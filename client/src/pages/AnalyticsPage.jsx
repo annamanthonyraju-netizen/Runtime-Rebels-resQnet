@@ -38,7 +38,7 @@ function AnalyticsPage() {
   useEffect(() => {
     const fetchAnalytics = async () => {
       try {
-        const res = await fetch('http://localhost:5000/api/analytics/overview');
+        const res = await fetch('https://runtime-rebels-resqnet.onrender.com/api/analytics/overview');
         const resData = await res.json();
         if (res.ok && resData.data) {
           setOverview(resData.data);

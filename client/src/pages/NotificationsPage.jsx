@@ -17,7 +17,7 @@ function NotificationsPage() {
   useEffect(() => {
     const fetchNotifications = async () => {
       try {
-        const res = await fetch('http://localhost:5000/api/notifications', {
+        const res = await fetch('https://runtime-rebels-resqnet.onrender.com/api/notifications', {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('resqnet_jwt_token') || ''}`
           }
@@ -80,7 +80,7 @@ function NotificationsPage() {
 
   const handleMarkAllRead = async () => {
     try {
-      await fetch('http://localhost:5000/api/notifications/read-all', {
+      await fetch('https://runtime-rebels-resqnet.onrender.com/api/notifications/read-all', {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('resqnet_jwt_token') || ''}`

@@ -17,9 +17,9 @@ function ResourcesPage() {
     const fetchData = async () => {
       try {
         const [resRes, hospRes, campRes] = await Promise.all([
-          fetch('http://localhost:5000/api/resources'),
-          fetch('http://localhost:5000/api/resources/hospitals'),
-          fetch('http://localhost:5000/api/resources/relief-camps')
+          fetch('https://runtime-rebels-resqnet.onrender.com/api/resources'),
+          fetch('https://runtime-rebels-resqnet.onrender.com/api/resources/hospitals'),
+          fetch('https://runtime-rebels-resqnet.onrender.com/api/resources/relief-camps')
         ]);
 
         const resData = await resRes.json();

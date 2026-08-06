@@ -193,7 +193,7 @@ function ReportIncident() {
     };
 
     try {
-      const response = await fetch('http://localhost:5000/api/incidents', {
+      const response = await fetch('https://runtime-rebels-resqnet.onrender.com/api/incidents', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

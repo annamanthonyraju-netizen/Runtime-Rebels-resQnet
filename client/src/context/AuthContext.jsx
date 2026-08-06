@@ -5,7 +5,7 @@ const AuthContext = createContext(null);
 
 // Configure Axios Instance for REST API
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api/auth',
+  baseURL: 'https://runtime-rebels-resqnet.onrender.com/api/auth',
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json'

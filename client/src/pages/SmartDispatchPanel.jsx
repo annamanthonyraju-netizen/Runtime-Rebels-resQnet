@@ -17,7 +17,7 @@ function SmartDispatchPanel() {
 
   const handleAcceptAI = async () => {
     try {
-      await fetch('http://localhost:5000/api/resources/dispatch', {
+      await fetch('https://runtime-rebels-resqnet.onrender.com/api/resources/dispatch', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

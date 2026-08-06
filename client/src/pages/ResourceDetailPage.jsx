@@ -12,7 +12,7 @@ function ResourceDetailPage() {
   useEffect(() => {
     const fetchResource = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/resources/${resourceId}`);
+        const res = await fetch(`https://runtime-rebels-resqnet.onrender.com/api/resources/${resourceId}`);
         const resData = await res.json();
         if (res.ok && resData.data) {
           setResource(resData.data);

@@ -25,7 +25,7 @@ function EmergencyBroadcastPage() {
     }
 
     try {
-      await fetch('http://localhost:5000/api/notifications/broadcast', {
+      await fetch('https://runtime-rebels-resqnet.onrender.com/api/notifications/broadcast', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

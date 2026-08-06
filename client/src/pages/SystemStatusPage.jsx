@@ -17,7 +17,7 @@ function SystemStatusPage() {
   };
 
   const SERVICES = [
-    { name: "Node.js / Express REST Backend", icon: FaServer, status: "ONLINE", latency: "14 ms", endpoint: "http://localhost:5000/api/auth" },
+    { name: "Node.js / Express REST Backend", icon: FaServer, status: "ONLINE", latency: "14 ms", endpoint: "https://runtime-rebels-resqnet.onrender.com/api/auth" },
     { name: "MongoDB Atlas Cloud Cluster", icon: FaDatabase, status: "CONNECTED", latency: "22 ms", endpoint: "Cluster-0 (AWS AP-South)" },
     { name: "Socket.IO Real-Time Engine", icon: FaBroadcastTower, status: "CONNECTED", latency: "5 ms", endpoint: "ws://localhost:5000" },
     { name: "Gemini 2.0 Flash Agentic AI", icon: FaRobot, status: "OPERATIONAL", latency: "1,240 ms", endpoint: "Google AI Vertex Mesh" },

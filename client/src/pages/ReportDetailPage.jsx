@@ -12,7 +12,7 @@ function ReportDetailPage() {
   useEffect(() => {
     const fetchReport = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/incidents/${id}`, {
+        const res = await fetch(`https://runtime-rebels-resqnet.onrender.com/api/incidents/${id}`, {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('resqnet_jwt_token') || ''}`
           }

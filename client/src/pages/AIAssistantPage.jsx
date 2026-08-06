@@ -73,7 +73,7 @@ function AIAssistantPage() {
   const handleRunPipeline = async () => {
     setIsExecuting(true);
     try {
-      const res = await fetch('http://localhost:5000/api/ai/analyze', {
+      const res = await fetch('https://runtime-rebels-resqnet.onrender.com/api/ai/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
