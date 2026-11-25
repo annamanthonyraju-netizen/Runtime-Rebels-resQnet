@@ -32,22 +32,35 @@ function HeroSection() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-            <Link
-              to="/dashboard/citizen/report"
-              className="px-6 py-4 rounded-xl bg-orange-500 hover:bg-orange-600 text-slate-950 font-bold text-base transition-all flex items-center justify-center gap-3 shadow-md"
-            >
-              <FaExclamationTriangle className="w-5 h-5 text-slate-950" />
-              <span>Report Emergency</span>
-            </Link>
+          <div className="pt-4 space-y-3">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <Link
+                to="/sos"
+                className="px-6 py-4 rounded-xl bg-red-600 hover:bg-red-700 text-white font-black text-base tracking-wide transition-all flex items-center justify-center gap-3 shadow-lg shadow-red-950/40 hover:scale-[1.02]"
+              >
+                <FaExclamationTriangle className="w-5 h-5 text-white animate-pulse" />
+                <span>🚨 SUPER EMERGENCY SOS</span>
+              </Link>
 
-            <Link
-              to="/dashboard"
-              className="px-6 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-base border border-slate-700 transition-all flex items-center justify-center gap-3"
-            >
-              <FaChartLine className="w-5 h-5 text-orange-500" />
-              <span>View Dashboard</span>
-            </Link>
+              <Link
+                to="/dashboard/citizen/report"
+                className="px-6 py-4 rounded-xl bg-orange-500 hover:bg-orange-600 text-slate-950 font-bold text-base transition-all flex items-center justify-center gap-3 shadow-md"
+              >
+                <span>Report Incident</span>
+              </Link>
+
+              <Link
+                to="/dashboard"
+                className="px-6 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-base border border-slate-700 transition-all flex items-center justify-center gap-3"
+              >
+                <FaChartLine className="w-5 h-5 text-orange-500" />
+                <span>View Dashboard</span>
+              </Link>
+            </div>
+
+            <p className="text-xs text-red-400 font-mono font-semibold pt-1">
+              "Immediate danger? Report an emergency without logging in."
+            </p>
           </div>
 
           {/* Emergency Alert Banner */}

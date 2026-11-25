@@ -11,6 +11,7 @@ import notificationRoutes from './routes/notificationRoutes.js';
 import resourceRoutes from './routes/resourceRoutes.js';
 import aiRoutes from './ai/routes/aiRoutes.js';
 import analyticsRoutes from './routes/analyticsRoutes.js';
+import sosRoutes from './routes/sosRoutes.js';
 import { errorHandler, notFoundHandler } from './middleware/errorMiddleware.js';
 
 const app = express();
@@ -37,6 +38,9 @@ app.get('/', (req, res) => {
 });
 
 // API Routes
+app.use('/api/sos', sosRoutes);
+app.use('/api/v1/sos', sosRoutes);
+
 app.use('/api/auth', authRoutes);
 app.use('/api/v1/auth', authRoutes);
 

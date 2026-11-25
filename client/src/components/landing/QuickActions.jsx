@@ -4,13 +4,13 @@ import { FaExclamationTriangle, FaMapMarkedAlt, FaPhoneAlt, FaDesktop, FaArrowRi
 
 const actions = [
   {
-    title: "Report Emergency",
-    desc: "Submit an urgent emergency SOS report for immediate AI triage and dispatch.",
+    title: "Super Emergency SOS",
+    desc: "Immediate danger? Report an emergency without logging in. Instant AI triage and priority dispatch.",
     icon: FaExclamationTriangle,
-    link: "/dashboard/citizen/report",
-    buttonText: "Report SOS Now",
-    color: "bg-red-500/10 border-red-500/30 text-red-400 hover:border-red-500",
-    badge: "URGENT SOS"
+    link: "/sos",
+    buttonText: "Send Instant SOS",
+    color: "bg-red-500/10 border-red-500/40 text-red-400 hover:border-red-500",
+    badge: "NO LOGIN REQUIRED"
   },
   {
     title: "Live Incidents",

@@ -3,6 +3,7 @@ import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
 import ForgotPassword from '../pages/ForgotPassword';
+import PublicSOSPage from '../pages/PublicSOSPage';
 import DashboardLayout from '../layouts/DashboardLayout';
 import DashboardIndex from '../pages/DashboardIndex';
 
@@ -67,6 +68,7 @@ function AppRoutes() {
     <Routes>
       {/* Public Landing & Auth Routes */}
       <Route path="/" element={<Home />} />
+      <Route path="/sos" element={<PublicSOSPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />

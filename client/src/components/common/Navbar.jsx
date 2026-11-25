@@ -80,12 +80,20 @@ function Navbar() {
             </>
           )}
 
+          {/* Super Emergency SOS (Unauthenticated Instant Access) */}
+          <Link
+            to="/sos"
+            className="px-4 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-black text-xs sm:text-sm tracking-wide transition-all flex items-center gap-2 shadow-md hover:shadow-red-900/30"
+          >
+            <FaExclamationTriangle className="w-4 h-4 text-white" />
+            <span>SUPER EMERGENCY SOS</span>
+          </Link>
+
           {/* Primary Orange Emergency CTA Button */}
           <Link
             to={isAuthenticated ? "/dashboard/citizen/report" : "/login"}
-            className="px-5 py-2.5 rounded-xl bg-orange-500 hover:bg-orange-600 text-slate-950 font-bold text-sm transition-all flex items-center gap-2 shadow-sm"
+            className="px-4 py-2.5 rounded-xl bg-orange-500 hover:bg-orange-600 text-slate-950 font-bold text-xs sm:text-sm transition-all flex items-center gap-2 shadow-sm"
           >
-            <FaExclamationTriangle className="w-4 h-4 text-slate-950" />
             <span>Emergency Report</span>
           </Link>
         </div>
@@ -109,6 +117,13 @@ function Navbar() {
           <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-slate-300 hover:text-orange-500">Contact</a>
           
           <div className="pt-3 border-t border-slate-800 flex flex-col gap-2">
+            <Link
+              to="/sos"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-center py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white font-black text-sm tracking-wide shadow-md"
+            >
+              🚨 SUPER EMERGENCY SOS
+            </Link>
             {!isAuthenticated ? (
               <>
                 <Link to="/login" onClick={() => setMobileMenuOpen(false)} className="block text-center py-2.5 rounded-lg bg-slate-800 text-white">Login</Link>
